@@ -8,10 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text(funtitle)
+                .padding()
+            
+            Button(action: {
+                //ref.child("piaxswiftui").setValue("KLICKAT!")
+            }) {
+                Text("Klicka här")
+            }
+            
+        }.onAppear(perform: {
+            
+            
+            //ref.child("piaxswiftui").setValue("Hurra det funkar")
+            
+            loadstuff()
+            
+            
+        })
     }
+    
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

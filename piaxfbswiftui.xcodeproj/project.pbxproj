@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81B982DC3783D8DE870C8672 /* Pods_piaxfbswiftui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE22738ED3444EB3934AA65 /* Pods_piaxfbswiftui.framework */; };
 		ABE7CDBE2746413F00A73578 /* piaxfbswiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7CDBD2746413F00A73578 /* piaxfbswiftuiApp.swift */; };
 		ABE7CDC02746413F00A73578 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7CDBF2746413F00A73578 /* ContentView.swift */; };
 		ABE7CDC22746414000A73578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE7CDC12746414000A73578 /* Assets.xcassets */; };
 		ABE7CDC52746414000A73578 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE7CDC42746414000A73578 /* Preview Assets.xcassets */; };
+		ABE7CDCC2746420E00A73578 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABE7CDCB2746420E00A73578 /* GoogleService-Info.plist */; };
+		ABE7CDCE27464C3A00A73578 /* FBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE7CDCD27464C3A00A73578 /* FBHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FE22738ED3444EB3934AA65 /* Pods_piaxfbswiftui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piaxfbswiftui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		724BE15FAA4EC260B6E01284 /* Pods-piaxfbswiftui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piaxfbswiftui.release.xcconfig"; path = "Target Support Files/Pods-piaxfbswiftui/Pods-piaxfbswiftui.release.xcconfig"; sourceTree = "<group>"; };
+		866C1D498BAEF36BA9E45B33 /* Pods-piaxfbswiftui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piaxfbswiftui.debug.xcconfig"; path = "Target Support Files/Pods-piaxfbswiftui/Pods-piaxfbswiftui.debug.xcconfig"; sourceTree = "<group>"; };
 		ABE7CDBA2746413F00A73578 /* piaxfbswiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piaxfbswiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE7CDBD2746413F00A73578 /* piaxfbswiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piaxfbswiftuiApp.swift; sourceTree = "<group>"; };
 		ABE7CDBF2746413F00A73578 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ABE7CDC12746414000A73578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE7CDC42746414000A73578 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABE7CDCB2746420E00A73578 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ABE7CDCD27464C3A00A73578 /* FBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B982DC3783D8DE870C8672 /* Pods_piaxfbswiftui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4374A42839D8EC21A93AF06A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				866C1D498BAEF36BA9E45B33 /* Pods-piaxfbswiftui.debug.xcconfig */,
+				724BE15FAA4EC260B6E01284 /* Pods-piaxfbswiftui.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		71AFC2180598CDD0EFB97ABA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FE22738ED3444EB3934AA65 /* Pods_piaxfbswiftui.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ABE7CDB12746413F00A73578 = {
 			isa = PBXGroup;
 			children = (
 				ABE7CDBC2746413F00A73578 /* piaxfbswiftui */,
 				ABE7CDBB2746413F00A73578 /* Products */,
+				4374A42839D8EC21A93AF06A /* Pods */,
+				71AFC2180598CDD0EFB97ABA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +79,10 @@
 		ABE7CDBC2746413F00A73578 /* piaxfbswiftui */ = {
 			isa = PBXGroup;
 			children = (
+				ABE7CDCB2746420E00A73578 /* GoogleService-Info.plist */,
 				ABE7CDBD2746413F00A73578 /* piaxfbswiftuiApp.swift */,
 				ABE7CDBF2746413F00A73578 /* ContentView.swift */,
+				ABE7CDCD27464C3A00A73578 /* FBHelper.swift */,
 				ABE7CDC12746414000A73578 /* Assets.xcassets */,
 				ABE7CDC32746414000A73578 /* Preview Content */,
 			);
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE7CDC82746414000A73578 /* Build configuration list for PBXNativeTarget "piaxfbswiftui" */;
 			buildPhases = (
+				2AE4EB51735B2E16A44DE969 /* [CP] Check Pods Manifest.lock */,
 				ABE7CDB62746413F00A73578 /* Sources */,
 				ABE7CDB72746413F00A73578 /* Frameworks */,
 				ABE7CDB82746413F00A73578 /* Resources */,
+				91F0A9A0F877CE8B5C8F0A5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,16 +159,60 @@
 			files = (
 				ABE7CDC52746414000A73578 /* Preview Assets.xcassets in Resources */,
 				ABE7CDC22746414000A73578 /* Assets.xcassets in Resources */,
+				ABE7CDCC2746420E00A73578 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AE4EB51735B2E16A44DE969 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-piaxfbswiftui-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F0A9A0F877CE8B5C8F0A5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-piaxfbswiftui/Pods-piaxfbswiftui-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-piaxfbswiftui/Pods-piaxfbswiftui-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-piaxfbswiftui/Pods-piaxfbswiftui-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABE7CDB62746413F00A73578 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE7CDCE27464C3A00A73578 /* FBHelper.swift in Sources */,
 				ABE7CDC02746413F00A73578 /* ContentView.swift in Sources */,
 				ABE7CDBE2746413F00A73578 /* piaxfbswiftuiApp.swift in Sources */,
 			);
@@ -263,6 +339,7 @@
 		};
 		ABE7CDC92746414000A73578 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866C1D498BAEF36BA9E45B33 /* Pods-piaxfbswiftui.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +369,7 @@
 		};
 		ABE7CDCA2746414000A73578 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 724BE15FAA4EC260B6E01284 /* Pods-piaxfbswiftui.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
