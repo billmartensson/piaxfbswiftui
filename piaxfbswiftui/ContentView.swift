@@ -9,28 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
-    
+    @ObservedObject var thehelper = FBHelper()
     
     var body: some View {
         VStack {
-            Text(funtitle)
+            Text(thehelper.funtitle)
                 .padding()
             
             Button(action: {
-                //ref.child("piaxswiftui").setValue("KLICKAT!")
+                thehelper.letsSaveStuff(funname: "Badboll")
             }) {
                 Text("Klicka här")
             }
-            
+
+            Button(action: {
+                thehelper.letsSaveStuff(funname: "Studsmatta")
+            }) {
+                Text("Klicka här också")
+            }
+
         }.onAppear(perform: {
-            
-            
             //ref.child("piaxswiftui").setValue("Hurra det funkar")
             
-            loadstuff()
-            
-            
+            thehelper.loadstuff()
         })
     }
     

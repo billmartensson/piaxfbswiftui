@@ -9,15 +9,25 @@ import Foundation
 import SwiftUI
 import Firebase
 
-class FBHelper {
+class FBHelper : ObservableObject {
     
     var ref: DatabaseReference!
     
-    @State var funtitle = ""
+    @Published var funtitle = ""
     
     init() {
         ref = Database.database().reference()
     }
+    
+    
+    func letsSaveStuff(funname : String)
+    {
+        
+        ref.child("funthing").setValue(funname) { err, fbref in
+            self.loadstuff()
+        }
+    }
+    
     
     func loadstuff() {
         ref.child("funthing").getData(completion:  { error, snapshot in
@@ -27,7 +37,7 @@ class FBHelper {
             }
             let funny = snapshot.value as! String
             print(funny)
-            funtitle = funny
+            self.funtitle = funny
         })
     }
     
